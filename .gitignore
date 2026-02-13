@@ -2,9 +2,6 @@
 .idea/
 *.iml
 
-# Qoder 配置
-.qoder/
-
 # 系统文件
 Thumbs.db
 .DS_Store
