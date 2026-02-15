@@ -173,13 +173,7 @@ Key parameters that can be adjusted:
 If you use this algorithm in your research, please cite:
 
 ```
-@misc{snowruccs2024,
-  author = {SnowRUCCS Contributors},
-  title = {SnowRUCCS: Snow Recognition Under Cloud Cover System},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/bugu1234/SnowRUCCS}
-}
+Zhang, Y.; Ye, C.; Yang, R.; Li, K. Reconstructing Snow Cover under Clouds and Cloud Shadows by Combining Sentinel-2 and Landsat 8 Images in a Mountainous Region. Remote Sens. 2024, 16, 188. https://doi.org/10.3390/rs16010188
 ```
 
 ## License
