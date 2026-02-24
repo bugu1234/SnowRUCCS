@@ -15,7 +15,7 @@ The algorithm combines:
 
 ## Algorithm Workflow
 
-![Algorithm Flowchart](images/fig1_algorithm_flowchart.png)
+![Algorithm Flowchart](images2/fig1_algorithm_flowchart.png)
 
 *Figure 1: Snow reconstruction algorithm flowchart for Sentinel-2 and Landsat 8/9 imagery*
 
@@ -34,7 +34,7 @@ The workflow consists of the following main steps:
 
 ### Improved Cloud Shadow Detection
 
-![Cloud Shadow Comparison](images/fig2_cloud_shadow_comparison.png)
+![Cloud Shadow Comparison](images2/fig2_cloud_shadow_comparison.png)
 
 *Figure 2: Comparison between improved and original cloud shadow detection algorithms for Sentinel-2 and Landsat 8/9 imagery*
 
@@ -45,7 +45,7 @@ Key improvements:
 
 ### Snow Detection Based on Spectral Characteristics
 
-![Spectral Curves](images/fig3_spectral_curves.png)
+![Spectral Curves](images2/fig3_spectral_curves.png)
 
 *Figure 3: Spectral reflectance curves of clouds and snow*
 
@@ -56,13 +56,13 @@ The algorithm exploits the distinct spectral signatures of snow and clouds:
 
 ### Multi-Sensor Snow Extraction
 
-![Snow Extraction Comparison](images/fig4_snow_extraction_comparison.png)
+![Snow Extraction Comparison](images2/fig4_snow_extraction_comparison.png)
 
 *Figure 4: Comparison of clear-sky snow extraction results from Sentinel-2, Landsat 8, and GF-2*
 
 ### Snow Reconstruction Results
 
-![Snow Reconstruction Results](images/fig5_snow_reconstruction_results.png)
+![Snow Reconstruction Results](images2/fig5_snow_reconstruction_results.png)
 
 *Figure 5: Snow reconstruction results under clouds and cloud shadows for Sentinel-2 and Landsat 8*
 
@@ -145,7 +145,7 @@ Export.image.toDrive({
 ```
 SnowRUCCS/
 ├── SnowRUCCS.js          # Main GEE script for Sentinel-2
-├── images/               # Documentation figures
+├── images2/              # Documentation figures (English version)
 │   ├── fig1_algorithm_flowchart.png
 │   ├── fig2_cloud_shadow_comparison.png
 │   ├── fig3_spectral_curves.png
@@ -172,8 +172,27 @@ Key parameters that can be adjusted:
 
 If you use this algorithm in your research, please cite:
 
-```
-Zhang, Y.; Ye, C.; Yang, R.; Li, K. Reconstructing Snow Cover under Clouds and Cloud Shadows by Combining Sentinel-2 and Landsat 8 Images in a Mountainous Region. Remote Sens. 2024, 16, 188. https://doi.org/10.3390/rs16010188
+```bibtex
+@article{zhang2023integrated,
+  author = {Zhang, Yanli and Song, Yuyu and Ye, Changqing and Liu, Jingfeng},
+  title = {An integrated approach to reconstructing snow cover under clouds and cloud shadows on Sentinel-2 Time-Series images in a mountainous area},
+  journal = {Journal of Hydrology},
+  volume = {619},
+  pages = {129264},
+  year = {2023},
+  doi = {10.1016/j.jhydrol.2023.129264}
+}
+
+@article{zhang2024reconstructing,
+  author = {Zhang, Yanli and Ye, Changqing and Yang, Rui and Li, Kaihan},
+  title = {Reconstructing Snow Cover under Clouds and Cloud Shadows by Combining Sentinel-2 and Landsat 8 Images in a Mountainous Region},
+  journal = {Remote Sensing},
+  volume = {16},
+  number = {1},
+  pages = {188},
+  year = {2024},
+  doi = {10.3390/rs16010188}
+}
 ```
 
 ## License
