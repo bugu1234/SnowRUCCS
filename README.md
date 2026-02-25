@@ -2,7 +2,7 @@
 
 **Snow Recognition Under Cloud Cover System**
 
-An algorithm for reconstructing snow cover information under clouds and cloud shadows using Sentinel-2 and Landsat 8/9 imagery.
+An algorithm for reconstructing snow cover information under clouds and cloud shadows using Sentinel-2 and Landsat 8 imagery.
 
 ## Overview
 
@@ -15,9 +15,9 @@ The algorithm combines:
 
 ## Algorithm Workflow
 
-![Algorithm Flowchart](images2/fig1_algorithm_flowchart.png)
+![Algorithm Flowchart](images/fig1_algorithm_flowchart.png)
 
-*Figure 1: Snow reconstruction algorithm flowchart for Sentinel-2 and Landsat 8/9 imagery*
+*Figure 1: Snow reconstruction algorithm flowchart for Sentinel-2 and Landsat 8 imagery*
 
 The workflow consists of the following main steps:
 1. Cloud pixel detection using FMask 4.0 algorithm
@@ -34,9 +34,9 @@ The workflow consists of the following main steps:
 
 ### Improved Cloud Shadow Detection
 
-![Cloud Shadow Comparison](images2/fig2_cloud_shadow_comparison.png)
+![Cloud Shadow Comparison](images/fig2_cloud_shadow_comparison.png)
 
-*Figure 2: Comparison between improved and original cloud shadow detection algorithms for Sentinel-2 and Landsat 8/9 imagery*
+*Figure 2: Comparison between improved and original cloud shadow detection algorithms for Sentinel-2 and Landsat 8 imagery*
 
 Key improvements:
 - FMask fillMinima algorithm for shadow candidate identification
@@ -45,7 +45,7 @@ Key improvements:
 
 ### Snow Detection Based on Spectral Characteristics
 
-![Spectral Curves](images2/fig3_spectral_curves.png)
+![Spectral Curves](images/fig3_spectral_curves.png)
 
 *Figure 3: Spectral reflectance curves of clouds and snow*
 
@@ -56,13 +56,13 @@ The algorithm exploits the distinct spectral signatures of snow and clouds:
 
 ### Multi-Sensor Snow Extraction
 
-![Snow Extraction Comparison](images2/fig4_snow_extraction_comparison.png)
+![Snow Extraction Comparison](images/fig4_snow_extraction_comparison.png)
 
 *Figure 4: Comparison of clear-sky snow extraction results from Sentinel-2, Landsat 8, and GF-2*
 
 ### Snow Reconstruction Results
 
-![Snow Reconstruction Results](images2/fig5_snow_reconstruction_results.png)
+![Snow Reconstruction Results](images/fig5_snow_reconstruction_results.png)
 
 *Figure 5: Snow reconstruction results under clouds and cloud shadows for Sentinel-2 and Landsat 8*
 
@@ -72,7 +72,7 @@ The algorithm exploits the distinct spectral signatures of snow and clouds:
 |---------|-------------|------------|
 | Sentinel-2 L1C | Cirrus band (B10) | 60m |
 | Sentinel-2 L2A | Surface reflectance bands | 10-60m |
-| Landsat 8/9 TOA | Top-of-atmosphere reflectance | 30m |
+| Landsat 8 TOA | Top-of-atmosphere reflectance | 30m |
 | JRC Global Surface Water | Water occurrence data | 30m |
 | SRTM DEM | Elevation, slope, aspect | 30m |
 | ESA WorldCover | Land cover classification | 10m |
@@ -145,7 +145,7 @@ Export.image.toDrive({
 ```
 SnowRUCCS/
 ├── SnowRUCCS.js          # Main GEE script for Sentinel-2
-├── images2/              # Documentation figures (English version)
+├── images/              # Documentation figures (English version)
 │   ├── fig1_algorithm_flowchart.png
 │   ├── fig2_cloud_shadow_comparison.png
 │   ├── fig3_spectral_curves.png
